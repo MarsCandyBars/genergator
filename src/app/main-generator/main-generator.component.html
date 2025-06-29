@@ -1,0 +1,12 @@
+<div>
+    <label class="m-2 p-2">Must Include:</label>
+    <input class="focus:outline-none m-2 p-1 ml-0 border border-slate-500 rounded" placeholder="Enter characters to inlcude.." [(ngModel)]="mustInclude">
+</div>
+
+<div>
+    <label class="m-2 p-2">Password Length:</label>
+    <input class="focus:outline-none m-2 ml-0 p-1 border border-slate-500 rounded" type="number" placeholder="Enter a number.." [(ngModel)]="length">
+</div>
+
+<button class="border rounded border-slate-500 bg-amber-100 hover:bg-slate-700 hover:text-slate-100 transition duration-500 m-4 p-2" (click)="mainGeneration()">Generate</button>
+<p class="m-2 mt-0 p-2"><span class="font-semibold">Password: </span><span class="text-emerald-600 break-words">{{result}}</span></p>
