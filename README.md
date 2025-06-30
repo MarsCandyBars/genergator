@@ -5,17 +5,17 @@
 
 ## Description
 
-A password generator app. 
+A password generator app. Can also be run as a desktop app!
 
 ## Installation
-# Web
+### Web
 ```sh
 1. Clone the repo
 2. cd into the directory
 3. Run npm install
 4. Run ng serve -o
 ```
-# Electron
+### Electron
 ```sh
 1. Clone the repo
 2. cd into the directory
