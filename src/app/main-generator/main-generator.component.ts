@@ -14,8 +14,8 @@ import { FormsModule } from '@angular/forms';
 
 export class MainGeneratorComponent {
   length: number = 0;
-  result = '';
-  mustInclude: any = "";
+  result: string = "";
+  mustInclude: string = "";
 
   mainGeneration() {
     this.length = this.length;
@@ -25,7 +25,7 @@ export class MainGeneratorComponent {
     const lengthValidity = typeof this.length === "number" || this.length === null;
     const mustIncludeValidity = this.mustInclude.length === 1 || this.mustInclude.length === 0;
 
-    if (this.mustInclude.length > 1 || this.mustInclude < 0) {
+    if (this.mustInclude.length > 1 || this.mustInclude.length < 0) {
       alert("You may only include a single character in the Must Include field");
       throw new Error("More than a single character was input into the Must Include field");
     } else if (typeof this.length != "number" || null) {
